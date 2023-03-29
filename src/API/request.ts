@@ -1,4 +1,4 @@
-import Axios, { AxiosPromise, AxiosResponse } from 'axios'
+import Axios, { AxiosResponse } from 'axios'
 import { notification } from 'antd'
 import qs from 'qs'
 import { contentTypes, defaultOptions, FetchParams } from './constant'
