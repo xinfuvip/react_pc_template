@@ -1,0 +1,36 @@
+.loginWrap {
+   width: 100%;
+   height: 100%;
+   background-image: url('../../assets/imgs/login_box_bg.png');
+   background-size: cover;
+   position: relative;
+
+   .loginBox {
+      width: 368px;
+      padding: 48px;
+      border-radius: 8px;
+      position: absolute;
+      top: 25%;
+      right: 14%;
+      background-color: #fff;
+
+      header {
+         width: 240px;
+         font-family: FZLanTingHeiS-DB-GB;
+         font-size: 30px;
+         line-height: 48px;
+         color: #005CE6;
+         word-break: keep-all;
+         margin-bottom: 51px;
+         font-weight: 400;
+      }
+
+      main {
+         :global {
+            .ant-btn-primary {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

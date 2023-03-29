@@ -1,0 +1,134 @@
+@import  '~antd/es/style/themes/index.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+  border-radius: 4px !important;
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 9px 12px;
+    color: #344156;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: FZLTHJW--GB1-0;
+    line-height: 22px;
+  }
+  :global(.ant-dropdown-menu-title-content) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  height: 48px;
+  margin-left: auto;
+  overflow: hidden;
+  .action {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    > span {
+      vertical-align: middle;
+    }
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+  .search {
+    padding: 0 12px;
+    &:hover {
+      background: transparent;
+    }
+  }
+  .account {
+    .avatar {
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line {
+      margin: 0 7px;
+    }
+
+    span {
+      font-family: FZLTHJW--GB1-0;
+      font-size: 14px;
+      color: #344156;
+      line-height: 22px;
+      font-weight: 400;
+    }
+  }
+
+  .btn {
+    padding: 3px;
+    color: #344156;
+    background: #f8fafc;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+
+    &:hover {
+      color: #344156;
+      background: #f8fafc;
+    }
+  
+    img {
+      width: 18px;
+      height: 18px;
+      margin-right: 6px;
+    }
+  
+    span {
+      font-size: 12px;
+      font-family: FZLanTingHeiS-R-GB;
+      line-height: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  :global(.ant-divider-vertical) {
+    vertical-align: unset;
+  }
+  .name {
+    display: none;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    .account {
+      .avatar {
+        margin-right: 0;
+      }
+    }
+    .search {
+      display: none;
+    }
+  }
+}

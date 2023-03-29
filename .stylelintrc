@@ -1,0 +1,11 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-prettier"],
+  "rules": {
+    "declaration-no-important": null,
+    "string-quotes": null,
+    "no-duplicate-selectors": null,
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "selector-pseudo-class-no-unknown": null
+  }
+}
